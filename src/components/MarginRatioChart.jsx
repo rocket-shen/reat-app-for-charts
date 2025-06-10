@@ -9,10 +9,10 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const DebtRatioChart = ({ data }) => {
+const MarginRatioChart = ({ data }) => {
   return (
-    <section className="mb-8">
-      <h2>资产负债率</h2>
+    <section>
+      <h2>毛利率</h2>
 
       <div className="chart-container">
         <ResponsiveContainer width="100%" height={500}>
@@ -41,9 +41,9 @@ const DebtRatioChart = ({ data }) => {
             <Legend />
             <Line
               type="monotone"
-              dataKey="资产负债率"
+              dataKey="毛利率"
               stroke="#ff7300"
-              name="资产负债率"
+              name="毛利率"
             />
           </LineChart>
         </ResponsiveContainer>
@@ -52,4 +52,4 @@ const DebtRatioChart = ({ data }) => {
   );
 };
 
-export default DebtRatioChart;
+export default MarginRatioChart;
