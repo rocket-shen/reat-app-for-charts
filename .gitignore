@@ -10,8 +10,8 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-grok3.md
 *.local
+grok3
 
 # Editor directories and files
 .vscode/*

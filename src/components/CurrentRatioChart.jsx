@@ -9,10 +9,10 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const CurrentRatioChart = ({ data }) => {
+const CurrentRatioChart = ({ data, companyName }) => {
   return (
     <section>
-      <h2>流动比率趋势</h2>
+      <h2>{companyName} 流动比率趋势</h2>
       <div className="chart-container">
         <ResponsiveContainer width="100%" height={500}>
           <BarChart

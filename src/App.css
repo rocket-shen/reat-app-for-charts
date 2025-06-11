@@ -26,3 +26,31 @@ h2 {
   margin-bottom: 0px;
 
 }
+
+.input-code-container input {
+  background-color: #f1f1f8;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  height: 48px; /* 调整高度 */
+  box-sizing: border-box; /* 确保padding不会影响总高度 */
+  font-size: 20px;
+}
+
+.match-button {
+  background-color: #250397;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 48px; /* 与输入框高度一致 */
+  box-sizing: border-box; /* 确保padding不会影响总高度 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+  transition: box-shadow 0.3s ease; /* 添加过渡效果，使阴影变化更平滑 */
+  margin-left: 6px;
+  font-size: 20px;
+}
+.match-button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* 鼠标悬停时增加阴影 */
+}

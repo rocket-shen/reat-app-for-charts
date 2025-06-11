@@ -9,10 +9,10 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const DebtRatioChart = ({ data }) => {
+const DebtRatioChart = ({ data, companyName }) => {
   return (
     <section className="mb-8">
-      <h2>资产负债率</h2>
+      <h2>{companyName} 资产负债率</h2>
 
       <div className="chart-container">
         <ResponsiveContainer width="100%" height={500}>

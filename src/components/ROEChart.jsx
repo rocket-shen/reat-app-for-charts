@@ -9,10 +9,10 @@ import {
     CartesianGrid,
   } from "recharts";
   
-  const ROEChart = ({ data }) => {
+  const ROEChart = ({ data, companyName }) => {
     return (
       <section>
-        <h2>净资产收益率 (ROE)</h2>
+        <h2>{companyName} 净资产收益率 (ROE)</h2>
         <div className="chart-container">
           <ResponsiveContainer width="100%" height={500}>
             <LineChart

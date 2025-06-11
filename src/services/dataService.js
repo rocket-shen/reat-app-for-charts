@@ -28,11 +28,11 @@ const parseCsv = (csv, transform = (value) => value) => {
   });
 };
 
-export const loadData = async () => {
+export const loadData = async (balanceSheetFilename, incomeStatementFilename) => {
   try {
     const [balanceSheetCsv, incomeStatementCsv] = await Promise.all([
-      loadFileData("SZ002588_史丹利_资产负债表.csv"),
-      loadFileData("SZ002588_史丹利_利润表.csv"),
+      loadFileData(balanceSheetFilename),
+      loadFileData(incomeStatementFilename),
     ]);
 
     const balanceResults = await parseCsv(balanceSheetCsv, (value, header) => {

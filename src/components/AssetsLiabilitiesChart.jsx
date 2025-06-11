@@ -10,10 +10,10 @@ import {
 } from "recharts";
 import { formatNumber } from "../utils/formatNumber";
 
-const AssetsLiabilitiesChart = ({ data }) => {
+const AssetsLiabilitiesChart = ({ data, companyName }) => {
   return (
     <section>
-      <h2>资产变动趋势</h2>
+      <h2>{companyName} 资产变动趋势</h2>
       <div className="chart-container">
         <ResponsiveContainer width="100%" height={500}>
           <LineChart

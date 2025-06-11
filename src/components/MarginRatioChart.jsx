@@ -9,10 +9,10 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const MarginRatioChart = ({ data }) => {
+const MarginRatioChart = ({ data, companyName }) => {
   return (
     <section>
-      <h2>毛利率</h2>
+      <h2>{companyName} 毛利率</h2>
 
       <div className="chart-container">
         <ResponsiveContainer width="100%" height={500}>
